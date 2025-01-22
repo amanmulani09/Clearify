@@ -4,10 +4,34 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Vite + TS</title>
+    <title>Clearify 🧹</title>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app" class=" w-80 container my-5 mx-5 radius-2xlshadow-lg rounded-lg border-4 border-blue-500 px-4 py-4">
+       <div>
+          <h3 class="text-center py-4 text-4xl text-blue-600 font-sans ">Clearify 🧹</h3>
+       </div>
+       <div>
+          <h4 class="mb-3 text-xl">Select Browser Storage to Clear</h4>
+          <ul class="flex flex-col">
+            <div class="mb-2">
+              <input type="checkbox" id="sessionStorage" class="h-6 w-6 mr-1 align-baseline"  /> <label class="text-xl ">Session Storage</label>
+            </div>
+            <div class="mb-2">
+              <input type="checkbox" id="localStorage" class="h-6 w-6 mr-1 align-baseline" /> <label class="text-xl">Local Storage</label>
+            </div>
+            <div class="mb-2">
+              <input type="checkbox" id="indexedDB" class="h-6 w-6 mr-1 align-baseline"  /> <label class="text-xl">IndexedDB</label>
+            </div>
+            <div class="mb-2">
+              <input type="checkbox" id="cookies"  class="h-6 w-6 mr-1 align-baseline" /> <label class="text-xl">Cookies</label>
+            </div>
+          </ul>
+          <div>
+            <button id="clearifyBtn" class="bg-blue-500 text-white px-4 py-2 rounded-lg mt-4 w-full">Clearify</button>
+          </div>
+       </div>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
