@@ -2,7 +2,7 @@ import "./style.css";
 
 const clearifyBtn = document.getElementById("clearifyBtn") as HTMLButtonElement;
 
-clearifyBtn.addEventListener("click", () => {
+const clearBrowserStorage = () => {
   let isSessionStorageSelected = (
     document.getElementById("sessionStorage") as HTMLInputElement
   ).checked;
@@ -55,4 +55,8 @@ clearifyBtn.addEventListener("click", () => {
     };
     deleteDatabases();
   }
-});
+
+  alert("Browser storage cleared successfully!");
+};
+
+clearifyBtn.addEventListener("click", clearBrowserStorage);
