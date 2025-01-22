@@ -1,2 +1,2 @@
 # Clearify
-A Chrome Extension to Effortless Browser Storage Cleanup in One Click!
+A Chrome Extension for Effortless Browser Storage Cleanup in One Click!
